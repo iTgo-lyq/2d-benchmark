@@ -1,0 +1,55 @@
+{
+  "name": "cocos",
+  "platform": "web-desktop",
+  "buildPath": "..\\..\\public",
+  "debug": true,
+  "md5Cache": false,
+  "sourceMaps": false,
+  "replaceSplashScreen": false,
+  "mainBundleCompressionType": "merge_dep",
+  "mainBundleIsRemote": false,
+  "mergeStartScene": false,
+  "experimentalEraseModules": false,
+  "compressTexture": true,
+  "packAutoAtlas": true,
+  "startScene": "21b2c8f8-4a57-48df-ad0d-81767a6a628f",
+  "scenes": [
+    {
+      "url": "db://assets/scene/dragonbone.scene",
+      "uuid": "afae2b06-fd71-427e-96d2-0c4561d3d92c"
+    },
+    {
+      "url": "db://assets/scene/main.scene",
+      "uuid": "21b2c8f8-4a57-48df-ad0d-81767a6a628f"
+    },
+    {
+      "url": "db://assets/scene/spirit-anim.scene",
+      "uuid": "0796c157-b34d-4eac-ae7e-03920c8f30cf"
+    },
+    {
+      "url": "db://assets/scene/spirit-static.scene",
+      "uuid": "383c59e3-cfab-4f6d-addd-8a32e730a407"
+    },
+    {
+      "url": "db://assets/scene/text.scene",
+      "uuid": "136e9aea-bcda-4cfc-affb-4e90d0ec0c6d"
+    }
+  ],
+  "outputName": "cocos",
+  "packages": {
+    "cocos-service": {
+      "configID": "678eaf",
+      "services": []
+    },
+    "web-desktop": {
+      "resolution": {
+        "designWidth": 960,
+        "designHeight": 640
+      },
+      "polyfills": {
+        "asyncFunctions": true
+      }
+    }
+  },
+  "__version__": "1.2.6"
+}
