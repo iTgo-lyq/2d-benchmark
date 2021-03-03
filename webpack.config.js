@@ -136,7 +136,7 @@ module.exports = (env, argv) => {
       from: path.join(__dirname, 'public'),
       globOptions: {
         ignore: argv.mode !== 'development' ? [
-          '**/assets',
+          '**/public/assets',
         ] : []
       }
     }],
