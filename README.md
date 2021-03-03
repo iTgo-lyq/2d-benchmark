@@ -4,13 +4,17 @@
 
 ## 运行
 
-导入 cocos 项目 `/workspace/cocos` 到 cocos creator
+**导入 cocos 项目 `/workspace/cocos` 到 cocos creator**
 
-构建项目至 `/public/cocos` 目录下
+**构建项目至 `/public/cocos` 目录下**
 
-启动项目
+- cocos creator -> 项目 -> 构建发布 
+- 自行填写 或 导入构建发布配置 `/workspace/cocos/buildConfig_web-desktop.json`
+- 构建
 
-```
+**启动项目**
+
+```bash
 npm install
 npm start
 ```
