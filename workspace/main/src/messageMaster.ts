@@ -25,7 +25,7 @@ function updateIframe() {
   console.log(data)
 
   if (iframe.src.indexOf(data.lib) === -1)
-    iframe.src = `/${data.lib}/index.html`
+    iframe.src = `${data.lib}/index.html`
   else {
     iframe.contentWindow?.postMessage(data, "*");
     window.tempData = data
