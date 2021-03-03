@@ -113,11 +113,6 @@ const config = {
     new AssetsInfoWebpackPlugin({
       path: path.join(__dirname, 'public/assets'),
     }),
-    new CopyWebpackPlugin({
-      patterns: [{
-        from: path.join(__dirname, 'public'),
-      }],
-    }),
     new HtmlWebpackPlugin({
       chunks: ['main'],
       filename: 'index.html',
@@ -128,13 +123,23 @@ const config = {
       filename: 'eva/index.html',
       template: 'workspace/eva/index.html',
     }),
-
   ]
 };
 
 module.exports = (env, argv) => {
   config.plugins.push(new webpack.DefinePlugin({
     'process.env': JSON.stringify(argv)
+  }))
+
+  config.plugins.push(new CopyWebpackPlugin({
+    patterns: [{
+      from: path.join(__dirname, 'public'),
+      globOptions: {
+        ignore: argv.mode !== 'development' ? [
+          '**/assets',
+        ] : []
+      }
+    }],
   }))
 
   if (argv.mode !== 'development') return config;
